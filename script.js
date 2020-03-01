@@ -8,8 +8,8 @@ const minusBtn2 = document.getElementById("minusBtn2");
 const itemCount1 = document.getElementById("itemCount1");
 const itemCount2 = document.getElementById("itemCount2");
 
-// const itemPrice1 = document.getElementById("itemPrice1");
-// const itemPrice2 = document.getElementById("itemPrice2");
+const itemPrice1 = document.getElementById("itemPrice1");
+const itemPrice2 = document.getElementById("itemPrice2");
 
 const removeItem1 = document.getElementById("removeItem1");
 const removeItem2 = document.getElementById("removeItem2");
@@ -17,6 +17,8 @@ const removeItem2 = document.getElementById("removeItem2");
 
 const item1 = document.getElementById("item1");
 const item2 = document.getElementById("item2");
+
+const checkoutBtn = document.getElementById("checkoutBtn");
 
 // Increment for item 1
 plusBtn1.addEventListener("click", function() {
@@ -94,5 +96,11 @@ function updateTotal() {
 
     document.getElementById('total').innerText = subTotal + tax;
 }
+
+// Checkout 
+checkoutBtn.addEventListener("click", function() {
+    document.getElementById("checkout-container").style.display = "block";
+    document.getElementById("items-container").style.display = "none";
+})
 
 updateTotal();
