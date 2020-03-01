@@ -90,7 +90,7 @@ function updateTotal() {
         document.getElementById("empty-container").style.display="block";
      }
     // adding 5% tax
-    let tax = subTotal * 5 / 100 ;
+    let tax = subTotal * 10 / 100 ;
     document.getElementById('tax').innerText = tax;
     document.getElementById("subtotal").innerText = subTotal;
 
